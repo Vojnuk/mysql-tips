@@ -1,0 +1,2 @@
+SELECT group_concat(concat(COLUMN_NAME) separator ', ') as sql_string FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'table_name';
